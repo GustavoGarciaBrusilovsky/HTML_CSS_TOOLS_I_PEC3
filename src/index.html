@@ -1,0 +1,82 @@
+<!-- index.html -->
+
+
+<!doctype html>
+<html lang="en">
+
+  <!-- Head, metadata y link a styles.css y app.js -->
+  <head>
+    <meta charset="utf-8">
+
+    <title>PEC 1</title>
+    <link rel="stylesheet" href="styles.css">
+    <script type="module" src="app.js"></script>
+    <script>function temperatura() {
+	    alert("La temperatura es perfecta para visitar Viallarriba, 22 grados, ¡te esperamos!")
+	}
+	</script>
+  </head>
+
+  <!-- Body -->
+  <body>
+  	<!-- header del body común a todas las páginas VISITE VILLARIBA  -->
+    <header>
+      <h1><a href="index.html">VISITE VILLARRIBA</a></h1>
+      <button type="button" value="clickme" onclick="temperatura()">¡Qué tiempo hace en Villarriba?</button>
+      <br>
+      <br>
+    </header>
+
+    <!-- Menú de navegación entre las páginas  -->
+    <nav>
+      <ul>
+        <li><a href="index.html" title="Home page"><span class="seleccionado"><strong>Home</strong></span></a></li>
+        <li><a href="category.html" title="Qué lugares visitar en Villarriba">Imperdibles</a></li>
+        <li><a href="presentation.html" title="Presentación de Villariba">Sobre Villarriba</a></li>
+        <li><a href="enlaces.html" title="links a copyright">enlaces</a></li>
+      </ul>
+    </nav>
+
+       <!-- sección principal -->
+    <main>
+
+          <article>
+          	<h2>¿Por qué Villarriba es el mejor destino para tus próximas vacaciones?</h2>
+	          <figure>
+	          <a href="presentation.html" title="Presentación de Villariba">
+	            <img src="./img/4a5a0345-97f0-41a8-a444-8dc0c3cbb940.jpg"
+	              alt="Bosque inflado vista nocturna"
+	              title="Bosque inflado vista nocturna"
+	              style="width:100%;">
+	          </a>
+	            <figcaption>Bosque inflado vista nocturna | No known copyright restrictions</figcaption>
+	          </figure>
+
+	        <h2>IMPERDIBLES: qué visitar en Villarriba</h2>
+
+	          <figure>
+	          <a href="category.html" title="Qué lugares visitar en Villarriba">
+	            <img src="./img/041a8c0f-52be-450f-94b8-a240d082917b.jpg"
+	              alt="Discoteca en la Plaza Mayor"
+	              title="Discoteca en la Plaza Mayor"
+	              style="width:100%;">
+	          </a>
+	              <figcaption>Discoteca en la Plaza Mayor</figcaption>
+	          </figure>
+   		  </article>
+
+    </main>
+
+     <!-- Footer: logo UOC, nombre alumno y asignatura  -->
+     <footer>
+       <div id="uocbox">
+          <br>
+          <p><a href="https://www.uoc.edu/portal/es/index.html" title="UOC Referentes en educación digital" target="_blank"><img src="img/logo-uoc.png" alt="logo UOC" width="200" height="50"></a></p>
+           <br>
+          <p><strong>Gustavo García Brusilovsky.</strong> Subject: HTML & CSS tools I</p>
+          <br>
+      </div>
+     </footer>
+
+  </body>
+</html>
