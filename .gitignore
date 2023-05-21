@@ -6,4 +6,4 @@
 /dist
 
 # Ignora los archivos cache
-*cache
+/.parcel-cache
