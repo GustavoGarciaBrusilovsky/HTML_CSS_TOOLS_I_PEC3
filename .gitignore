@@ -1,0 +1,9 @@
+
+# Ignora la carpeta node_modules
+node_modules
+
+# Ignora todos los archivos de la carpeta de producción dist
+dist/*
+
+# Ignora los archivos cache
+*cache
