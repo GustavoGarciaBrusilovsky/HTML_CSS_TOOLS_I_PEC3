@@ -19,6 +19,47 @@ header {
   padding-top: 22px;
 }
 
+.title_and_logo {
+  padding: 15px;
+  display: inline-flex;
+  width: auto;
+  margin: auto;
+}
+
+/* FX: Clipping y animaciones */
+
+.clipping {
+  clip-path: ellipse(300px 500px at 375px 500px);
+}
+
+.circle {
+  animation: 2s infinite alternate circle;
+}
+
+@keyframes circle {
+  from {
+    -webkit-clip-path: circle(0%);
+    clip-path: circle(0%);
+  }
+  to {
+    -webkit-clip-path: circle(600px);
+    clip-path: circle(600px);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.fading {
+  animation: fadeIn 1s ease-in infinite alternate;
+}
+
 /* color gris de fondo excluido el header y nav */
 main {
   background-color: #F8F9F9;
@@ -79,6 +120,7 @@ h1 {
   text-transform: uppercase;
   padding-top: 40px;
   margin-bottom: 0px;
+  padding-left: 25px;
 }
 
 /* Configuración titular h2 */
@@ -124,7 +166,13 @@ ul {
 button {
 	margin-top: 15px;
 	padding: 5px;
+	margin: 5px;
 	float: right;
+	transition: background-color 0.2s ease-out;
+}
+
+button:hover {
+  background-color: #1ce;
 }
 
 
@@ -146,6 +194,9 @@ button {
     figure image, image {
     	width: 80%;
     }
+    .clipping {
+	  clip-path: circle(225px at center);
+	}
   }
  
   /* para 480px o menos */
@@ -197,7 +248,7 @@ a:link {
 }
 
 a:hover {
-  background: yellow;
+
 }
 
 footer a:hover {
