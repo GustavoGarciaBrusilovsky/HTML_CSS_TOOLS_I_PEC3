@@ -9,6 +9,7 @@
     <meta charset="utf-8">
 
     <title>PEC 2</title>
+    <link rel="icon" type="image/x-icon" href="./img/icons8-estrella-50.png">
     <link rel="stylesheet" href="styles.css">
     <script type="module" src="app.js"></script>
   </head>
@@ -50,10 +51,19 @@
               <li>            
               <figure>
               <a href="detalle4.html">
-              <img src="./img/IMG_8335.jpg"
+              <picture>
+               <source  srcset="./img/IMG_8335.jpg?as=webp" type="image/webp"
+                        media="(min-width: 700px)">
+               <source  srcset="./img/IMG_8335_pp.jpg?as=webp" type="image/webp"
+                        media="(min-width: 400px)" />
+               <img src="./img/IMG_8335.jpg" alt="Discoteca de Verano" 
+               style="width:100%;"/> 
+              </picture>
+              <!-- <img src="./img/IMG_8335.jpg"
                 alt="Discoteca de verano"
                 title="Discoteca de verano"
-                style="width:100%;"></a>
+                style="width:100%;"> -->
+                </a>
               <figcaption>Discoteca de verano | fuente: <abbr title="Gustavo García Brusilovsky">GGB</abbr> </figcaption>
             </figure>
            </li>

@@ -9,6 +9,7 @@
     <meta charset="utf-8">
 
     <title>PEC 2</title>
+    <link rel="icon" type="image/x-icon" href="./img/icons8-estrella-50.png">
     <link rel="stylesheet" href="styles.css">
     <script type="module" src="app.js"></script>
   </head>
@@ -49,10 +50,29 @@
             <li>            
               <figure>
               <a href="detalle2.html">
-              <img src="./img/IMG_8284.jpg"
+              <img
+                srcset="./img/IMG_8284_350.jpg 480w, ./img/IMG_8284_660.jpg 660w"  
+                sizes="/max-width: 700px) 480px, 780px"
+                src="./img/IMG_8284.jpg"
                 alt="Multiverso de Espejos"
                 title="Multiverso de Espejos"
-                style="width:100%;"></a>
+                style="width:100%;">
+                </a>
+              <figcaption>Multiverso de Espejos | fuente: <abbr title="Gustavo García Brusilovsky">GGB</abbr> </figcaption>
+            </figure>
+            </li>
+            <li>            
+              <figure>
+              <a href="detalle2.html">
+             <picture>
+               <source  srcset="./img/IMG_8289.jpg?as=webp" type="image/webp"
+                        media="(min-width: 700px)">
+               <source  srcset="./img/IMG_8289_pp.jpg?as=webp" type="image/webp" 
+                        media="(min-width: 400px)" />
+               <img src="./img/IMG_8289.jpg"  alt="Multiverso de espejos desde móvil" 
+               style="width:100%;"/> 
+              </picture>
+                </a>
               <figcaption>Multiverso de Espejos | fuente: <abbr title="Gustavo García Brusilovsky">GGB</abbr> </figcaption>
             </figure>
             </li>
