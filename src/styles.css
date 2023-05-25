@@ -151,6 +151,11 @@ footer #uocbox {
   text-align: left;
 }
 
+footer a:link, footer a:visited {
+	color: white;
+	font-size: 0.9rem;
+}
+
 .enlaces {
   padding-bottom: 100px;
 }
