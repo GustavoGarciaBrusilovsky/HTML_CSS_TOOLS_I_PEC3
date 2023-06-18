@@ -220,7 +220,10 @@ p.imperdibles {
     }
     .clipping {
 	  clip-path: circle(225px at center);
-	}
+  	}
+    figure img {
+      height: 600px;
+    }
   }
  
   /* para 480px o menos */
@@ -240,6 +243,9 @@ p.imperdibles {
 	}
     figure image, image, figure picture {
       width: 70%;
+      }
+     figure img {
+      height: 500px;
     }
   }
 
